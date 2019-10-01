@@ -1,11 +1,7 @@
 function isPalindrome(str:string):boolean {
 	const strReverse = str.split('').reverse().join('');
 
-	if(strReverse === str) {
-		return true;
-	} else {
-		return false;
-	}
+	return strReverse === str;
 }
 
 const testString = isPalindrome('abba');
